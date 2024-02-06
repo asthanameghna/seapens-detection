@@ -1,0 +1,11 @@
+sources:
+  plankton:
+      description: Sample images required to demonstrate the YOLOv5 model trained in the Identification of seapens
+      origin:
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: ["zip://seapens-detection.zip/images/*.jpg::https://zenodo.org/record/8032379/files/seapens-detection.zip"] #tbc
+        chunks: {}
+        storage_options: {'anon': True}
+        coerce_shape: [1000, 1000] #tbc
+        exif_tags: True
