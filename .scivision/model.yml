@@ -1,0 +1,12 @@
+name: seapens-detection #tbc
+url: https://github.com/asthanameghna/seapens-detection
+import: resnet50_cefas #tbc
+model: resnet50 #tbc
+args:
+    label_level: label3_detritus #tbc
+prediction_fn:
+    call: predict_batch #tbc
+    args:
+        X: image
+    kwargs:
+        batch_size: 3
