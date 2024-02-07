@@ -1,6 +1,6 @@
 name: seapens-detection #tbc
 url: https://github.com/asthanameghna/seapens-detection
-import: resnet50_cefas #tbc
+import: seapens-detection #tbc
 model: resnet50 #tbc
 args:
     label_level: label3_detritus #tbc
